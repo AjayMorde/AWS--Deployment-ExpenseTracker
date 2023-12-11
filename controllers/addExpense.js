@@ -3,7 +3,7 @@ const Users=require('../models/user');
 const sequelize= require('../connections/database');
 
 const addExpense=async(req,res)=>{
-    const t=await   sequelize.transaction();  // create a new database transaction 
+    const t=await    sequelize.transaction();  // create a new database transaction 
     function isValidData(data) {
         if (data == undefined || data.length === 0)
             return true;
