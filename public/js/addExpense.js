@@ -19,13 +19,13 @@ function onSubmit(e) {
             Category: category.value,
         };
         const token=localStorage.getItem("token")
-        axios.post("http://localhost:3000/add-expense/expense", details, { headers: {"Authorization" : token} }).
+        axios.post("/add-expense/expense", details, { headers: {"Authorization" : token} }).
             then(({ data }) => {
                 amount.value='';
                 description.value='';
                 category.value='';
                 const ID = data.Success.id
-                console.log("this is the Success is---------------------------------------->"+data.Success.id)
+                console.log("this is the Success is----------------------------------- ----->"+data.Success.id)
                 // addonedetail(ID);
                 alert('Details Successfully Saved!');
             })
