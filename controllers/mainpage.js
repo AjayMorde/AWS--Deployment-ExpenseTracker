@@ -32,6 +32,12 @@ exports.getindex2page = (request,response,next) =>{
 exports.getindex4page = (request,response,next) =>{
     response.sendFile('index4.html',{root:'views'});
 }
+
+
 exports.getreportspage = (request,response,next) =>{
     response.sendFile('reports.html',{root:'views'});
+}
+
+exports.getresetpasspage= (request,response,next) =>{
+    response.sendFile('resetPassword.html',{root:'views'});
 }
