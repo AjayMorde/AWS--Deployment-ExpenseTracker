@@ -4,7 +4,7 @@ const app = express();
 const cors = require('cors');
 
 
-
+// starting app.js
 
 const sequelize = require('./connections/database');
 
