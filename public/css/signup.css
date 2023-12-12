@@ -11,6 +11,7 @@ body {
     width: 550px;
     margin-top: 30px;
     margin-left: 40px;
+    background-color: #000;
 }
 
 #heading{
@@ -52,7 +53,7 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: 80%;
+    width: 100%;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 15px;

@@ -75,3 +75,25 @@ th {
     cursor: pointer;
     margin: 20px 0;
 }
+
+
+@media only screen and (max-width: 667px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .report-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .button {
+        margin-bottom: 10px;
+    }
+
+    table {
+        width: 100%;
+    }
+}

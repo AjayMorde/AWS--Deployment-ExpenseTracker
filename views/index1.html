@@ -6,18 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EXPENSE TRACKER</title>
     <link rel="stylesheet" href="/css/index1.css">
+    <script src="https://kit.fontawesome.com/b16e4e26d6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
  
     <header>
-        <nav>
-            <ul>
+
+        <a class="navbar-brand" href="#"><img src="/images/logo.jpg" alt="brand-image" width="50px" height="50px"></a>
+        <h2 id="headl">Expense Tracker</h2>
+        <nav >
+
+            <ul id="sidemenu">
+            
                 <li>
-                    <a href="index3">Home</a>
+                    <a href="index3"  class="active">Home</a>
                 </li>
                 <li>
-                    <a href="index1" class="active">Add-Expense</a>
+                    <a href="index1" >Add-Expense</a>
                 </li>
                 <li>
                     <a href="index2">Watch-Expenses</a>
@@ -28,8 +34,10 @@
                 <li>
                     <a href="login">Log Out</a>
                 </li>
+                <i class="fa-solid fa-xmark non" onclick="closemenu()"></i>
              
             </ul>
+            <i class="fa-solid fa-bars non" id="open"onclick="openmenu()"></i>
         </nav>
     </header>
     
